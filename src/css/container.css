@@ -1,19 +1,34 @@
-/* Styles for Mobile devices */
+/*  Базові стилі для мобільних пристроїв (320px → 375px) */
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 0 16px;
 }
-/* Styles for Tablet devices */
+
+/* Адаптація для телефонів (375px+) */
+@media only screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+/* Адаптація для планшетів (768px+) */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+
+/* Адаптація для десктопів (1280px+) */
+@media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
 }
+/* 
+Додаткова адаптація для великих екранів (1440px+ за бажанням)
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  } */

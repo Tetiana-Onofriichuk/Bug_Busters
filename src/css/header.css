@@ -39,7 +39,6 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    width: 704px;
     height: 48px;
     padding: 0 28px;
     margin-top: 32px;
@@ -92,8 +91,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .container-page-header {
+    padding: 0 100px;
+  }
   .header-container {
-    width: 1080px;
     height: 48px;
     padding: 0 30px;
     margin-top: 32px;

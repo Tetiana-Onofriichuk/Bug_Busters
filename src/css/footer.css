@@ -11,11 +11,11 @@
   flex-wrap: wrap;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation {
     flex-wrap: nowrap;
   }
-} */
+}
 
 .footer-logo {
   font-family: 'Inter', sans-serif;
@@ -57,6 +57,14 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+  .social-wrapper {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+
 
 .socials {
   display: flex;

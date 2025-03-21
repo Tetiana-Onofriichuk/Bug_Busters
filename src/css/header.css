@@ -3,13 +3,11 @@
   align-items: center;
   border: 1px solid #fbfbfb;
   border-radius: 8px;
-  width: 335px;
+  min-width: 335px;
   height: 42px;
   background: #fbfbfb;
   padding: 0 20px;
   margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
   margin-bottom: 198px;
 }
 
@@ -44,7 +42,8 @@
     width: 704px;
     height: 48px;
     padding: 0 28px;
-    margin: 32px 32px 200px 32px;
+    margin-top: 32px;
+    margin-bottom: 200px;
   }
   .header-logo {
     font-size: 20px;
@@ -97,7 +96,8 @@
     width: 1080px;
     height: 48px;
     padding: 0 30px;
-    margin: 32px 32px 100px 32px;
+    margin-top: 32px;
+    margin-bottom: 155px;
   }
   .header-logo {
     margin-right: 296px;

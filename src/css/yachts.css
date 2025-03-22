@@ -29,7 +29,7 @@
 
 .yachts-item-container {
   
-  width: 335px;
+  max-width: 335px;
   height: 478px;
   margin-bottom: 40px;
   border-radius: 24px;
@@ -40,6 +40,6 @@
 
 @media screen and (min-width: 768px) {
   .yachts-item-container {
-
+    
   }
 }

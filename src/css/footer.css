@@ -1,13 +1,7 @@
 .basement {
   border-radius: 24px 24px 0 0;
-  min-width: 355px;
+  min-width: 320px;
   background: #1b414b;
-}
-
-@media screen and (max-width: 375px) {
-  .basement {
-    max-width: 100%;
-  }
 }
 
 .navigation {

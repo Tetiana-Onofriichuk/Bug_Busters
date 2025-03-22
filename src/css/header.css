@@ -62,7 +62,7 @@
     flex-basis: calc((100% - 8px) / 3);
   }
 
-  .navigation-link {
+  .header-navigation-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +103,16 @@
   .header-logo {
     margin-right: 296px;
   }
-  .navigation-link:hover,
-  .navigation-link:focus {
-    background-color: #1b414b;
+  .header-navigation-link {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  .header-social-icon:hover,
-  .header-social-icon:focus {
+
+  .header-navigation-link:hover,
+  .header-navigation-link:focus {
+    fill: #1b414b;
+  }
+  .header-social-link:hover,
+  .header-social-link:focus {
     fill: #062730;
   }
 }

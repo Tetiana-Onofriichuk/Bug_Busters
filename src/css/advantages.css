@@ -84,7 +84,7 @@
   }
 
   .advantages-list {
-    width: 704px;
+    max-width: 704px;
     height: 424px;
     padding: 90px 32px;
     flex-direction: row;
@@ -108,6 +108,11 @@
     font-size: 13px;
     line-height: 1.15;
   }
+  .advantages-image{
+    max-width: 704px;
+
+
+  }
 
 }
 
@@ -118,7 +123,7 @@
   }
 
   .advantages-list {
-    width: 716px;
+    max-width: 716px;
     height: 424px;
     padding: 90px 50px;
   }
@@ -133,5 +138,8 @@
 
   .advantage-number::after {
     width: 280px;
+  }
+  .advantages-image{
+    max-width: 432px;
   }
 }

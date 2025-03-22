@@ -1,3 +1,210 @@
-p {
-  color: red;
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e1823;
+  color: #fbfbfb;
+}
+
+/* Контейнер с изображением */
+.contact-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* common - загальні стилі*/
+@media screen and (min-width: 320px) and (max-width: 374.98px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
+  }
+}
+
+/* Мобильная версия */
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  row-gap: 80px;
+  margin-bottom: 80px;
+}
+.contact-image {
+  min-width: 335px;
+}
+.contact-image img {
+  max-width: 100%;
+}
+.contact-image picture,
+.contact-image img {
+  display: block;
+  width: 100%;
+  border-radius: 20px; /* Закругление краев */
+  overflow: hidden; /* Гарантирует, что края не выходят за рамки */
+}
+.submit-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 15px;
+  padding: 14px 44px;
+  width: 122px;
+  height: 46px;
+  background-color: #1b414b;
+
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+.contacts-title {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+.subscribe-form .form-input {
+  /* при вводе */
+  background-color: transparent;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #fbfbfb;
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+  /* min-width: 335px; */
+  width: 100%;
+  /* на ширину секции */
+  height: 42px;
+  margin-bottom: 18px;
+}
+.subscribe-form .form-input::placeholder {
+  color: rgba(251, 251, 251, 0.4);
+}
+.form-input:focus {
+  outline: none; /* убрать стандартную рамку */
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+.form-user-coment {
+  /* при вводе */
+  width: 100%;
+  resize: none;
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+  margin-bottom: 40px;
+
+  /* width: 335px; */
+  min-height: 108px;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent; /*требование робота*/
+  outline: transparent; /*требование робота*/
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-user-coment:focus {
+  outline: none; /* убрать стандартную рамку */
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+.form-user-coment::placeholder {
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(251, 251, 251, 0.4);
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .submit-btn {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 18px 75px;
+    width: 194px;
+    height: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    gap: 20px;
+  }
+  /* .contact-image {
+    border: 1px solid #0e1823;
+    border-radius: 20px;
+  } */
+}
+/* ----- */
+
+.rent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Формы */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

@@ -1,7 +1,99 @@
-<section class="hero">
-  <div class="container">
-    <h1 class="hero-title">Effective Solutions for Your Business</h1>
-    <p>hallo</p>
-    <button class="hero-btn" type="button">Order Service</button>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Section</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles-pr-adapt.css" />
+  </head>
+  <body>
+    <section class="rent">
+      <div class="container">
+        <div class="contact-image">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/image-4-desktop-@1x.jpg 1x,
+                ./img/image-4-desktop-@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/image-4-tablet-@1x.jpg 1x,
+                ./img/image-4-tablet-@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
+            <img
+              srcset="
+                ./img/image-4-mobile-@1x.jpg 1x,
+                ./img/image-4-mobile-@1x.jpg 2x
+              "
+              alt="yacht at dusk on the water"
+              width="658"
+            />
+          </picture>
+        </div>
+        <div class="contact-form">
+          <h2 class="contacts-title">Rent a yacht now</h2>
+          <form class="subscribe-form">
+            <label class="form-label">
+              <!-- <label for="fullname">Full Name</label> -->
+              <input
+                class="form-input"
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Full Name"
+              />
+            </label>
+            <label class="form-label">
+              <!-- <label for="email">Email</label> -->
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+            </label>
+            <label class="form-label">
+              <!-- <label for="phone">Phone number</label> -->
+              <input
+                class="form-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone number"
+                pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+                title="+xx-xxx-xxx-xx-xx"
+                required
+              />
+            </label>
+            <label class="form-label">
+              <textarea
+                class="form-user-coment"
+                id="comment"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

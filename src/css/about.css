@@ -1,0 +1,120 @@
+.about-us {
+    position: relative;
+    top: -86px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .about-us {
+        top: -33px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-us {
+        top: -100px;
+    }
+}
+
+.about-us-text-block {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background-color: #fbfbfb;
+    border-radius: 24px;
+    max-width: 335px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .about-us-text-block {
+        max-width: 704px;
+        padding-top: 50px;
+        padding-left: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-us-text-block {
+        max-width: 1180px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/*  */
+.about-us-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    text-align: left;
+    max-width: 283px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us-title {
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 537px;
+        margin-bottom: 50px;
+    }
+}
+
+.about-us-paragraf-big {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us-paragraf-big {
+        font-size: 23px;
+        line-height: 23px;
+        max-width: 355px;
+    }
+}
+
+.about-us-paragraf-small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: #040306;
+    opacity: 0.4;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us-paragraf-small {
+        font-size: 13px;
+        line-height: 115%;
+        max-width: 385px;
+        margin-bottom: 27px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-us-text-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-paragraf-small {
+        margin-bottom: 100px;
+    }
+}
+
+.image-block {
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    top: -80px;
+}

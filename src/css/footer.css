@@ -1,21 +1,34 @@
+
 .basement {
   border-radius: 24px 24px 0 0;
-  min-width: 355px;
+  /* min-width: 320px; */
   background: #1b414b;
 }
 
 .navigation {
   padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navigation {
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
     flex-wrap: nowrap;
   }
-} */
+}
+
+@media screen and (min-width: 1280px) {
+  .navigation {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 
 .footer-logo {
   font-family: 'Inter', sans-serif;
@@ -25,9 +38,16 @@
   color: #fbfbfb;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 20px;
+  }
+}
+
 .yatch-links {
   display: flex;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .yatch-link-item {
@@ -35,15 +55,13 @@
   width: 66px;
   height: 40px;
   background: rgba(251, 251, 251, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 400;
   font-size: 9px;
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,10 +70,32 @@
   }
 }
 
+.yatch-link-item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .yatch-link-item:hover,
+  .yatch-link-item a:focus {
+    background: #fbfbfb;
+    color: #1b414b;
+  }
+}
 
 .social-wrapper {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .social-wrapper {
+    width: 100%;
+    margin-top: 80px;
+  }
 }
 
 .socials {
@@ -64,11 +104,7 @@
   justify-content: center;
   width: 88px;
   height: 24px;
-}
-
-.svg-link:hover,
-.svg-link:focus {
-  /* background-color: green; */
+  outline: none;
 }
 
 .svg-link {
@@ -85,8 +121,21 @@
   fill: #fbfbfb;
 }
 
+@media screen and (min-width: 1280px) {
+  .svg-link:hover .social-icon,
+  .svg-link:focus .social-icon {
+    fill: rgba(251, 251, 251, 0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .svg-link:focus {
+    outline: none;
+  }
+}
+
 .footer-message {
-  width: 282px;
+  max-width: 282px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
@@ -121,6 +170,7 @@
   color: rgba(251, 251, 251, 0.4);
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 82px;
   padding-bottom: 20px;
@@ -131,5 +181,6 @@
     font-size: 14px;
     line-height: 1.18;
     margin-top: 99px;
+    gap: 32px;
   }
 }

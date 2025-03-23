@@ -4,13 +4,10 @@
     <ul class="yachts-list">
       <li class="yachts-item-list">
         <picture>
-          <source 
-            srcset="./img/yachts-img/img-mob-yaht-x1.jpg 1x,
-                    ./img/yachts-img/img-mob-yaht-x2.jpg 2x"/>
-          <img 
-            class="yacht-img" 
-            src="./img/yachts-img/img-mob-yaht-x1.jpg"
-            alt="Yacht 1"/>
+          <source srcset="./img/yachts-img/img-mob-yaht@x1.jpg 1x, ./img/yachts-img/img-mob-yaht@x2.jpg 2x" media="(max-width: 767px)">
+          <source srcset="./img/yachts-img/img-tablet-yaht@x1.jpg 1x, ./img/yachts-img/img-tablet-yaht@x2.jpg 2x" media="(min-width: 768px)">
+          <source srcset="./img/yachts-img/img-desktop-yaht@x1.jpg 1x, ./img/yacht-img/img-desktop-yaht@x2.jpg 2x" media="(min-width: 1280px)">
+          <img class="yacht-img" src="./img/yachts-img/img-mob-yaht@x1.jpg" alt="Yacht 1"/>
         </picture>
 
         <div class="name-yacht-container">
@@ -18,13 +15,81 @@
           <p class="type-of-yacht">luxury yachts</p>
         </div>
         <div class="line"></div>
+        <div class="name-yacht-container">
+          <ul class="attribute-list">
+            <li class="attribute-list-item">length</li>
+            <li class="attribute-list-item">builder</li>
+            <li class="attribute-list-item">built</li>
+            <li class="attribute-list-item">guests</li>
+            <li class="attribute-list-item">price</li>
+          </ul>
+          <ul class="attribute-list">
+            <li class="type-list-item">48m(155ft)</li>
+            <li class="type-list-item">Admiral</li>
+            <li class="type-list-item">2021</li>
+            <li class="type-list-item">11 in 5 cabins</li>
+            <li class="type-list-item">€33,500,000</li>
+          </ul>
+        </div>
       </li>
       <li class="yachts-item-list second-yacht">
-       
+        <picture>
+          <source srcset="./img/yachts-img/img-tablet-yaht2@x1.jpg 1x, ./img/yachts-img/img-tablet-yaht2@x2.jpg 2x" media="(min-width: 768px)">
+          <source srcset="./img/yachts-img/img-desktop-yaht2@x1.jpg 1x, ./img/yachts-img/img-desktop-yaht2@x2.jpg 2x" media="(min-width: 1280px)">
+          <img class="yacht-img" src="./img/yachts-img/img-tablet-yaht2@x1.jpg" alt="Yacht 2" />
+        </picture>
+        
+        <div class="name-yacht-container">
+          <p class="title-name-yacht benetti">BENETTI OASIS <span class="span-item">40...</span> M BO122</p>
+          <p class="type-of-yacht">luxury yachts</p>
+        </div>
+        <div class="line"></div>
+        <div class="name-yacht-container">
+          <ul class="attribute-list">
+            <li class="attribute-list-item">length</li>
+            <li class="attribute-list-item">builder</li>
+            <li class="attribute-list-item">built</li>
+            <li class="attribute-list-item">guests</li>
+            <li class="attribute-list-item">price</li>
+          </ul>
+          <ul class="attribute-list">
+            <li class="type-list-item">48m(133ft)</li>
+            <li class="type-list-item">Benetti</li>
+            <li class="type-list-item">2025</li>
+            <li class="type-list-item">10 in 5 cabins</li>
+            <li class="type-list-item">€23,210,000</li>
+          </ul>
+        </div>
       </li>
       <li class="yachts-item-list third-yacht">
+        <picture>
+          <source srcset="./img/yachts-img/img-desktop-yaht3@x1.jpg 1x, ./img/yachts-img/img-desktop3-yaht3@x2.jpg 2x" />
+          <img class="yacht-img" src="./img/yachts-img/img-desktop-yaht3@x1.jpg" alt="Yacht 3" />
+        </picture>
         
+        <div class="name-yacht-container">
+          <p class="title-name-yacht">belle anna</p>
+          <p class="type-of-yacht">luxury yachts</p>
+        </div>
+        <div class="line"></div>
+        <div class="name-yacht-container">
+          <ul class="attribute-list">
+            <li class="attribute-list-item">length</li>
+            <li class="attribute-list-item">builder</li>
+            <li class="attribute-list-item">built</li>
+            <li class="attribute-list-item">guests</li>
+            <li class="attribute-list-item">price</li>
+          </ul>
+          <ul class="attribute-list">
+            <li class="type-list-item">50m(155ft)</li>
+            <li class="type-list-item">ISA</li>
+            <li class="type-list-item">2012</li>
+            <li class="type-list-item">12 in 6 cabins</li>
+            <li class="type-list-item">€21,000,000</li>
+          </ul>
+        </div>
       </li>
     </ul>
+    <a class="rent-button" href="./..#rentjacht">Yacht rental</a>
   </div>
 </section>

@@ -1,32 +1,57 @@
 
+.footer-container {
+  padding: 0 10px;
+}
+
 .basement {
   border-radius: 24px 24px 0 0;
-  /* min-width: 320px; */
   background: #1b414b;
+  margin: 0 auto;
+  max-width: 355px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .basement {
+    max-width: 1230px;
+  }
 }
 
 .navigation {
   padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 336px) {
+  .navigation > *:first-child {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     padding-top: 50px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 48px;
+    padding-right: 48px;
     flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .navigation {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
@@ -149,7 +174,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-message {
-    width: 640px;
+    max-width: 640px;
     font-size: 32px;
     margin-top: 96px;
   }
@@ -157,7 +182,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer-message {
-    width: 693px;
+    max-width: 693px;
   }
 }
 

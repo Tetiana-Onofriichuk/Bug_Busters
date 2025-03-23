@@ -123,12 +123,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rent-button:hover,
 .tent-button:focus {
   background-color: #fbfbfb;
   color: #1b414b;
+  
 }
 
 

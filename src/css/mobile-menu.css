@@ -14,6 +14,9 @@
     visibility: visible;
     pointer-events: auto;    
 }
+.holder-mobile-menu {
+    position: relative;
+}
 .wrap-mobile-menu {
     position: absolute;
     display: flex;
@@ -49,7 +52,8 @@
   .nav-mobile-menu {
     position: absolute;
     top: 259px;
-    left: 142px;
+    left: 50%;
+    transform: translate(-50%);
     width: 91px;
     height: 128px;
   }
@@ -82,7 +86,8 @@
     width: 88px;
     height: 24px;
     top: 748px;
-    left: 144px;
+    left: 50%;
+    transform: translate(-50%);
 }
 .social-list-mobile-menu {
     display: flex;

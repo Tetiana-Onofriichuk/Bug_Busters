@@ -122,6 +122,9 @@
     margin-bottom: 75px;
     font-size: 48px;
   }
+  .yachts-list {
+    margin-bottom: 50px;
+  }
   .yachts-item-list {
     width: calc((100% - 32px * 1) / 2);
     max-width: 336px;

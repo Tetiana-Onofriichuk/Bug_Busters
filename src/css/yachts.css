@@ -94,7 +94,7 @@
   display: block;
   border-radius: 15px;
   padding: 14px 32px;
-  width: 142px;
+  min-width: 142px;
   height: 46px;
   border: 1px solid rgba(251, 251, 251, 0.35);
   font-weight: 500;

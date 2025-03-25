@@ -1,18 +1,18 @@
 
 .about-us {
   position: relative;
-  top: -86px;
+  top: -67px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .about-us {
-    top: -33px;
+    top: -70px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-us {
-    top: -100px;
+    top: -35px;
   }
 }
 

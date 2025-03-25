@@ -7,7 +7,7 @@
       rgba(17, 19, 31, 0.39) 75.3%,
       rgba(17, 19, 31, 0) 98.27%
     ),
-    url(/img/background-hero/hero.jpg);
+    url(/img/background-hero-webp/hero.webp);
   background-repeat: no-repeat;
   background-size: 270%;
   background-position: 50% 61%;
@@ -43,7 +43,7 @@
         rgba(17, 19, 31, 0.39) 75.3%,
         rgba(17, 19, 31, 0) 98.27%
       ),
-      url(/img/background-hero/hero@2x.jpg);
+      url(/img/background-hero-webp/hero@2x.webp);
     background-size: 270%;
     background-position-y: 61%;
   }
@@ -57,7 +57,7 @@
         rgba(17, 19, 31, 0.39) 75.3%,
         rgba(17, 19, 31, 0) 98.27%
       ),
-      url(/img/background-hero/hero@2x.jpg);
+      url(/img/background-hero-webp/hero@2x.webp);
     background-size: 200%;
     background-position-y: 50%;
   }
@@ -71,7 +71,7 @@
         rgba(17, 19, 31, 0.39) 75.3%,
         rgba(17, 19, 31, 0) 98.27%
       ),
-      url(/img/background-hero/hero@2x.jpg);
+      url(/img/background-hero-webp/hero@2x.webp);
     background-size: 100%;
     background-position-y: 48%;
   }

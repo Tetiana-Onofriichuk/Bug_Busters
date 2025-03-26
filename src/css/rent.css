@@ -55,7 +55,7 @@
 }
 @media screen and (min-width: 1280px) {
   .contact-form {
-    width: 472px;
+    max-width: 472px;
   }
 }
 .submit-btn {

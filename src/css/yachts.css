@@ -148,7 +148,6 @@
     width: auto;
     height: 52px;
     font-size: 18px;
-    line-height: 20px;
     line-height: 1.1;
     margin-bottom: 150px;
   }
@@ -169,7 +168,7 @@
     max-width: 313px;
   }
   .rent-button:hover,
-  .tent-button:focus {
+  .rent-button:focus {
     background-color: #fbfbfb;
     color: #1b414b;
   }
